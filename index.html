@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>한국주차시스템 결제 서비스</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Noto Sans KR,sans-serif;margin:0;background:#f6f7f9;color:#111}
+    .wrap{max-width:860px;margin:0 auto;padding:28px}
+    .card{background:#fff;border:1px solid #e6e8ee;border-radius:16px;padding:22px;box-shadow:0 6px 20px rgba(0,0,0,.04)}
+    h1{font-size:22px;margin:0 0 10px}
+    h2{font-size:16px;margin:22px 0 10px}
+    p,li{line-height:1.6}
+    .badge{display:inline-block;background:#eef2ff;color:#1e3a8a;padding:4px 10px;border-radius:999px;font-size:12px;margin-left:8px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:720px){.grid{grid-template-columns:1fr 1fr}}
+    .k{color:#6b7280;font-size:13px;margin:0 0 4px}
+    .v{margin:0;font-weight:600}
+    .muted{color:#6b7280}
+    .hr{height:1px;background:#eef0f4;margin:18px 0}
+    a{color:#2563eb;text-decoration:none}
+    a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>한국주차시스템 결제 사이트 <span class="badge">결제</span></h1>
+      <p class="muted">
+        본 페이지는 결제대행 목적으로 운영되는 페이지입니다.
+        실제 결제(카드결제/계좌이체) 기능은 심사 승인 후 연동 예정입니다.
+      </p>
+
+      <div class="hr"></div>
+
+      <div class="grid">
+        <div>
+          <p class="k">상호(서비스명)</p>
+          <p class="v">[한국주차시스템/결제서비스]</p>
+        </div>
+        <div>
+          <p class="k">사업자 유형</p>
+          <p class="v">[법인 사업자]</p>
+        </div>
+        <div>
+          <p class="k">대표자</p>
+          <p class="v">[양찬우]</p>
+        </div>
+        <div>
+          <p class="k">고객센터</p>
+          <p class="v">[전화번호] / [이메일]</p>
+        </div>
+        <div>
+          <p class="k">주소</p>
+          <p class="v">[사업장 주소]</p>
+        </div>
+        <div>
+          <p class="k">운영시간</p>
+          <p class="v">[연중무휴 24시간]</p>
+        </div>
+      </div>
+
+      <h2>제공 서비스(상품) 개요</h2>
+      <ul>
+        <li>[일일권] – 요금: 20,000원</li>
+        <li>[할인권] – 요금: 30,000원</li>
+        <li>결제수단: (예정) 신용/체크카드, 간편결제 등</li>
+      </ul>
+
+      <h2>환불/취소 정책</h2>
+      <ul>
+        <li>결제 후 미사용 및 오 결제 건에 한해 환불 가능</li>
+        <li>서비스 제공(사용) 이후에는 환불이 제한될 수 있음</li>
+        <li>환불 문의: 고객센터로 접수 후 영업일 기준 5~7일 내 처리</li>
+      </ul>
+
+      <h2>이용약관 / 개인정보처리방침</h2>
+      <p class="muted">
+        약관/방침 페이지를 연결합니다.
+      </p>
+      <ul>
+        <li><a href="#" onclick="alert('심사 승인 후 정식 URL로 연결 예정입니다.');return false;">이용약관(예정)</a></li>
+        <li><a href="#" onclick="alert('심사 승인 후 정식 URL로 연결 예정입니다.');return false;">개인정보처리방침(예정)</a></li>
+      </ul>
+
+      <div class="hr"></div>
+      <p class="muted">© <span id="y"></span> [서비스명]. All rights reserved.</p>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
